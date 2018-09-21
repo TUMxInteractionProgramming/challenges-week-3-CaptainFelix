@@ -15,14 +15,14 @@
 <body>
 <!-- #4 #one #page -->
 <div id="channels">
-    <h1>
+    <h1 id="app-bar-channels">
         <!-- #3 #channels #moocus the talkative duck-->
         <img src="http://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus, the chatty duck!" style="height: 56px;">
         chatter|app
     </h1>
 
     <!-- #3 #channels #list is much better, than headlines or paragraphs... -->
-    <ul>
+    <ul id="channel-list">
         <li>#Yummy
             <!-- #3 #channels #favorite this is not starred -->
             <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
@@ -72,7 +72,7 @@
 
 <!-- #4 #one #page -->
 <div id="chat">
-    <h1>
+    <h1 id="app-bar-chat">
         #SevenContinents
         <small>by
             <strong>cheeses.yard.applies</strong>
@@ -82,7 +82,7 @@
     <!-- #3 #chat #container -->
     <!-- #4 assign a #class to all your #messages to address them with css -->
     <!-- #4 apply a class "own" to your #messages to align them separately with #margins -->
-    <div class="message own">
+    <div class="message; message own">
         <h3>
             <!-- #3 #chat #location points to w3w in a new tab -->
             <a href="http://w3w.co/cheeses.yard.applies" target="_blank">
@@ -91,7 +91,9 @@
             Wed, June 20th, 13:37
             <em>15 min. left</em>
         </h3>
-        <p>What's the place you folks call home?</p>
+        <p>What's the place you folks call home?
+                <button>+5 min.</button>
+        </p>
         <button>+5 min.</button>
     </div>
 
@@ -106,8 +108,9 @@
             Wed, June 20th, 13:39
             <em>4 min. left</em>
         </h3>
-        <p>BRISBANE! Hang loose!</p>
-        <button>+5 min.</button>
+        <p>BRISBANE! Hang loose!
+            <button>+5 min.</button>
+        </p>
     </div>
 
     <!-- #3 #chat #container -->
@@ -121,9 +124,10 @@
             Wed, June 20th, 14:02
             <em>12 min. left</em>
         </h3>
-        <p>The big apple.</p>
-        <button>+5 min.</button>
-    </div>
+        <p>The big apple.
+                <button>+5 min.</button>
+        </p>
+            </div>
 
     <!-- #3 #chat #container -->
     <!-- #4 #messages #class -->
@@ -136,8 +140,9 @@
             Wed, June 20th, 14:02
             <em>7 min. left</em>
         </h3>
-        <p>Eu sou um Cariocas.</p>
-        <button>+5 min.</button>
+        <p>Eu sou um Cariocas.
+                <button>+5 min.</button>
+        </p>
     </div>
 
     <!-- #3 #chat #container -->
@@ -151,8 +156,9 @@
             Wed, June 20th, 14:07
             <em>14 min. left</em>
         </h3>
-        <p>Greetings from the western cape!</p>
-        <button>+5 min.</button>
+        <p>Greetings from the western cape!
+                <button>+5 min.</button>
+        </p>
     </div>
 
     <!-- #3 #chat #container -->
@@ -166,9 +172,21 @@
             Wed, June 20th, 04:08
             <em>15 min. left</em>
         </h3>
-        <p>北京</p>
-        <button>+5 min.</button>
+        <p>北京
+                <button>+5 min.</button>
+        </p>
     </div>
+
+    <div id="chat-bar">
+        <button id="emojis-button">
+            <img src="http://ip.lfe.mw.tum.de/sections/smile-o.png">
+        </button>
+        <div id="emojis">
+            &#x1F601; &#x1F602;&#x1F603;&#x1F604;&#x1F605;
+        </div>
+    </div>
+
+
 </div>
 
 </body>
